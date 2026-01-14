@@ -12,12 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Mobile Menu Toggle
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('open');
-    });
 
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
+
+    
     // 3. Number Counter Animation (Impact Stats)
     const counters = document.querySelectorAll('.stat h3');
     const speed = 200; 

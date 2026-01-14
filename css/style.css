@@ -398,10 +398,19 @@ footer {
 @media (max-width: 900px) {
     .stat-grid { grid-template-columns: 1fr 1fr; }
 }
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 22px;
+        right: 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .logo { height: 42px; }
-    .hamburger { display:block; }
+  
 
     nav ul {
         position: fixed;
@@ -420,4 +429,15 @@ footer {
 
 @media (max-width: 600px) {
     .stat-grid { grid-template-columns: 1fr; }
+}
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
